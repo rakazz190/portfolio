@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - Dark Mode</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }body {
+  line-height: 1.6;
+  color: #eee;
+  background-color: #121212;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header {
+  background: #1f1f1f;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #1e90ff;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  animation: fadeIn 1s ease-in;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #1e90ff;
+}
+
+.project {
+  background: #1e1e1e;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #1e90ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background: #1f1f1f;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Raka Putra Dermawan</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <section id="about">
+    <h2>About Me</h2>
+    <p>Hai! Saya seorang Siswa yang memiliki ketertarikan dalam dunia Fotografi, dan saat ini saya sedang menyelesaikan pendidikan di jenjang SMK dengan jurusan Desain Komunikasi Visual. Mampu Mengoperasikan Kamera dan memahami dasar dasar Fotografi, Dapat bekerja sama dalam tim ataupun secara mandiri.</p>
+  </section>  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project One</h3>
+      <p>A simple landing page built with HTML and CSS.</p>
+    </div>
+    <div class="project">
+      <h3>Project Two</h3>
+      <p>A to-do list app using JavaScript and localStorage.</p>
+    </div>
+  </section>  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: praka3757@gmail.com</p>
+    <p>Instagram: @rapvouz</p>
+  </section>  <footer>
+    <p>&copy; 2025 Raka Putra. All rights reserved.</p>
+  </footer>
+</body>
+</html>
